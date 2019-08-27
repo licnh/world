@@ -9,7 +9,7 @@
 5. 执行安装
    >运行：`php artisan admin:install`
 6. 访问
-   >在浏览器中访问 <http://localhost/admin/>
+   >在浏览器中访问 <http://localhost/admin/>  账号admin密码admin
   
 ---
 ## 遇到的问题
