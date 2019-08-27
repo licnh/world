@@ -1,4 +1,4 @@
-##安装
+## 安装
 1. 需要装好laravel
 2. 配置好数据库连接，在/.env
 3. 然后在项目根目录引入laravel-admin源码：
@@ -12,7 +12,7 @@
    >在浏览器中访问 <http://localhost/admin/>
   
 ---
-##遇到的问题
+## 遇到的问题
 
 1. <http://localhost/admin/> 404
    > 在nginx中配置
@@ -34,7 +34,7 @@
 
 ---
 
-##其他
+## 其他
 
 1. 将界面修改为中文
    > \config\app.php中修改
