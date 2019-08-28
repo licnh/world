@@ -1,6 +1,0 @@
-#https://github.com/licess/lnmp
-#下载解压
-wget http://soft.vpser.net/lnmp/lnmp1.6.tar.gz -cO lnmp1.6.tar.gz && tar zxf lnmp1.6.tar.gz && cd lnmp1.6
-#编辑
-screen -S lnmp
-#掉线了可以用screen -r lnmp
