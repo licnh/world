@@ -12,6 +12,18 @@
    - PHP JSON 扩展
    - PHP BCMath 扩展
 
+## 安装composer
+
+1. dc
+
+2. 换为国内源 
+
+   > composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+## 安装laravel
+
+1. composer global require laravel/installer
+
 ## 安装
 
 1. 需要装好laravel
