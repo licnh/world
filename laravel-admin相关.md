@@ -1,16 +1,34 @@
+## 环境搭建
+
+1. 使用lnmp的一键安装脚本 [github文档](https://github.com/licess/lnmp)
+2. 查看php扩展，因为laravel需要以下条件：
+   - PHP >= 7.1.3
+   - PHP OpenSSL 扩展
+   - PHP PDO 扩展
+   - PHP Mbstring 扩展
+   - PHP Tokenizer 扩展
+   - PHP XML 扩展
+   - PHP Ctype 扩展
+   - PHP JSON 扩展
+   - PHP BCMath 扩展
+
 ## 安装
+
 1. 需要装好laravel
 2. 配置好数据库连接，在/.env
 3. 然后在项目根目录引入laravel-admin源码：
+   
    > 运行：`composer require encore/laravel-admin` 
 4. 发布资源
    > 运行：`php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 `
 5. 执行安装
+   
    >运行：`php artisan admin:install`
 6. 访问
+   
    >在浏览器中访问 <http://localhost/admin/>  账号admin密码admin
-  
+
 ---
 ## 遇到的问题
 
@@ -38,4 +56,4 @@
 
 1. 将界面修改为中文
    > \config\app.php中修改
-  `'locale' => 'zh-CN',`
+    `'locale' => 'zh-CN',`
