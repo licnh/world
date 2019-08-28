@@ -24,7 +24,47 @@
 
 1. composer global require laravel/installer
 
-## 安装
+2. 将laravel包含到path 
+
+   > export PATH=$PATH:$HOME/.config/composer/vendor/bin
+   >
+   > source /etc/profile
+   >
+   > chmod u+x /root/.config/composer/vendor/laravel/installer/laravel
+
+   
+
+3. 新建laravel项目
+
+   > cd /home/wwwroot
+   >
+   > laravel new nezha
+
+4. 用lnmp命令 新建vhost域名 www.nezha.test
+
+   > lnmp vhost add
+
+   再将该域名指向127.0.0.1
+
+   > vi /etc/hosts
+   >
+   > 写入 > 127.0.0.1 www.nezha.test
+
+   改写fastcgi的配置
+
+   > vi /usr/local/nginx/conf/fastcgi.conf
+
+   在fastcgi_param PHP_ADMIN_VALUE中加入项目的根路径，形如：
+
+   > fastcgi_param PHP_ADMIN_VALUE "open_basedir=$document_root/:/tmp/:/proc/:/home/wwwroot/nezha/"
+
+4. 修改.env
+
+   > vi /home/wwwroot/nezha/.env
+   >
+   > 将mysql的密码改为服务器的mysql密码
+
+## 安装laravel-admin
 
 1. 需要装好laravel
 2. 配置好数据库连接，在/.env
