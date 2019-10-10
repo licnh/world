@@ -109,3 +109,9 @@
 1. 将界面修改为中文
    > \config\app.php中修改
     `'locale' => 'zh-CN',`
+   
+2. 优化composer ： 
+
+   > composer dump-autoload --optimize
+
+   这个命令的本质是将 PSR-4/PSR-0 的规则转化为了 classmap 的规则， 因为 classmap 中包含了所有类名与类文件路径的对应关系，所以加载器不再需要到文件系统中查找文件了。可以从 classmap 中直接找到类文件的路径。
